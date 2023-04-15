@@ -7,4 +7,5 @@ A simple Tic Tac Toe game made with HTML JS and CSS
 
 ![App Screenshot](Screenshots/site.png)
 ![App Screenshot](Screenshots/site2.png)
+<img src="Screenshots/site2.png" width="200" />
 
