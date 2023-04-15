@@ -1,7 +1,18 @@
 
 # Tic-Tac-Toe
 
-A simple Tic Tac Toe game made with HTML JS and CSS with custom player names.
+A simple Tic Tac Toe game made with HTML JS and CSS
+
+
+## Features
+
+- Custom player names
+- Win logic
+- Play again
+
+## Todo
+
+- Score Counter
 
 ## Screenshots
 
