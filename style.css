@@ -115,10 +115,20 @@ button:active {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 2.5rem;
-  font-weight: bold;
   transition: all 0.3s ease;
-  color: var(--primary-color);
+  padding: 5%;
+}
+
+.player-mark {
+  width: 90%;
+  height: 90%;
+  object-fit: contain;
+  filter: var(--primary-color);
+  filter: brightness(0) saturate(100%) invert(42%) sepia(93%) saturate(1352%) hue-rotate(230deg) brightness(89%) contrast(98%);
+}
+
+.cell.win .player-mark {
+  filter: brightness(0) invert(1);
 }
 
 .cell:hover {

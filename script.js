@@ -48,7 +48,16 @@ class TicTacToe {
     const index = cell.dataset.index;
     if (this.board[index] === "" && this.gameActive) {
       this.board[index] = this.currentPlayer;
-      cell.textContent = this.currentPlayer;
+
+      // Clear existing content
+      cell.textContent = "";
+
+      // Create and append image
+      const img = document.createElement("img");
+      img.src = this.currentPlayer === "X" ? "img/cross.svg" : "img/nought.svg";
+      img.alt = this.currentPlayer;
+      img.className = "player-mark";
+      cell.appendChild(img);
 
       if (this.checkWin()) {
         this.handleWin();
@@ -98,7 +107,11 @@ class TicTacToe {
 
   resetBoard() {
     this.board = Array(9).fill("");
-    this.cells.forEach((cell) => (cell.textContent = ""));
+    this.cells.forEach((cell) => {
+      while (cell.firstChild) {
+        cell.removeChild(cell.firstChild);
+      }
+    });
     this.gameActive = true;
     this.currentPlayer = "X";
     this.updateStatus();
