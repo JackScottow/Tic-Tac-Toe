@@ -2,37 +2,55 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tic Tac Toe</title>
     <link rel="stylesheet" href="style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
-    <link rel="icon" href="img/favicon.svg" type="image/svg" />
-    <script src="script.js" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
   </head>
   <body>
-    <div id="start-game">
-      <h1>Tic Tac Toe!</h1>
-      <div id="playerOneInput" contenteditable="true">Player One</div>
-      <div id="playerTwoInput" contenteditable="true">Player Two</div>
-      <button id="start-button">Play!</button>
-    </div>
-    <div id="game">
-      <h1 id="game-text"></h1>
-      <div id="board">
-        <div data-x="0"></div>
-        <div data-x="1"></div>
-        <div data-x="2"></div>
-        <div data-x="3"></div>
-        <div data-x="4"></div>
-        <div data-x="5"></div>
-        <div data-x="6"></div>
-        <div data-x="7"></div>
-        <div data-x="8"></div>
+    <main>
+      <div class="game-container">
+        <div id="menu" class="screen">
+          <h1>Tic Tac Toe</h1>
+          <div class="player-inputs">
+            <input type="text" id="player1" placeholder="Player 1 (X)" maxlength="15" />
+            <input type="text" id="player2" placeholder="Player 2 (O)" maxlength="15" />
+          </div>
+          <button id="start">Start Game</button>
+        </div>
+
+        <div id="game" class="screen hidden">
+          <div class="game-info">
+            <h2 id="status">Player 1's Turn</h2>
+            <div class="score">
+              <div class="score-item">
+                <div class="score-label" id="score1-label">Player 1 (X)</div>
+                <div class="score-value" id="score1">0</div>
+              </div>
+              <div class="score-item">
+                <div class="score-label" id="score2-label">Player 2 (O)</div>
+                <div class="score-value" id="score2">0</div>
+              </div>
+            </div>
+          </div>
+          <div class="board">
+            <div class="cell" data-index="0"></div>
+            <div class="cell" data-index="1"></div>
+            <div class="cell" data-index="2"></div>
+            <div class="cell" data-index="3"></div>
+            <div class="cell" data-index="4"></div>
+            <div class="cell" data-index="5"></div>
+            <div class="cell" data-index="6"></div>
+            <div class="cell" data-index="7"></div>
+            <div class="cell" data-index="8"></div>
+          </div>
+          <div class="actions">
+            <button id="reset">Reset Board</button>
+            <button id="new-game">New Game</button>
+          </div>
+        </div>
       </div>
-      <button id="reset">Reset Game</button>
-    </div>
+    </main>
+    <script src="script.js"></script>
   </body>
 </html>

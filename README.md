@@ -1,26 +1,46 @@
-# Tic-Tac-Toe
+# Modern Tic-Tac-Toe
 
-<img src="Screenshots/site.png" height="400" alt="Splash"	/>
-<img src="Screenshots/site2.png" height="400" alt="Game"/>
+![Tic Tac Toe Game](tictactoe.png)
 
-This is a simple Tic Tac Toe game implemented using HTML, CSS, and JavaScript. The game allows two players to take turns marking X and O on a 3x3 grid. The first player to get three of their marks in a row, column, or diagonal wins the game.
-
-##
-
-[Demo here](https://tictactoe.jackscottow.com)
+A sleek, modern implementation of the classic Tic-Tac-Toe game built with HTML, CSS, and JavaScript. This version features a clean, responsive design with smooth animations and an intuitive user interface.
 
 ## Features
 
-- Custom player names
-- Win logic
-- Play again
+- 🎮 Clean, modern UI with smooth animations
+- 👥 Customizable player names
+- 📊 Score tracking system
+- 🔄 Reset board while keeping scores
+- 🆕 New game option to start fresh
+- 📱 Fully responsive design
+- 🎯 Win detection with visual feedback
+- 🤝 Draw detection
+- ✨ Hover effects and interactive feedback
 
 ## Technologies Used
 
-- HTML
-- CSS
-- JavaScript
+- HTML5
+- CSS3 (with modern features like CSS Grid and Flexbox)
+- JavaScript (ES6+)
+- Google Fonts (Poppins)
 
-## Todo
+## How to Play
 
-- Score Counter
+1. Enter custom names for both players (or use defaults)
+2. Click "Start Game" to begin
+3. Players take turns clicking cells to place their X or O
+4. First player to get three in a row wins!
+5. Use "Reset Board" to play another round
+6. Use "New Game" to start fresh with new players
+
+## Installation
+
+Simply clone the repository and open `index.html` in your browser:
+
+```bash
+git clone [repository-url]
+cd modern-tic-tac-toe
+```
+
+## License
+
+MIT License - feel free to use this code for your own projects!
